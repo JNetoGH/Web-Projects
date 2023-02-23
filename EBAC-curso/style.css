@@ -1,0 +1,73 @@
+section {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+
+
+#logo {
+    max-height: 7vh
+}
+.nav-link {
+    color: white;
+}
+
+
+
+.img-fluid, img {
+    border-radius: 5px
+}
+.imagemDoCartao {
+    border-radius: 5px 5px 0px 0px
+}
+
+
+.btn {
+    border: none;
+}
+.btn:hover {
+    background-color: #b7ff5a;
+    color: black;
+}
+.btnDeCard {
+    width: 100%;
+}
+
+
+
+#contato {
+    background-color: #f4f4f4;
+}
+input, textarea {
+    margin-bottom: 1rem;
+}
+
+
+
+@media (orientation: portrait) {
+    section {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+
+    #games {
+        background-color: #f4f4f4;
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+    .card .imagemDoCartao {
+        max-height: 100px;
+        object-fit: cover; /*crops the imgs*/
+    }
+    #game-3 {
+        object-position: 0% 90%; /*moves the crop of the third img*/
+    }
+
+
+    #contato {
+        background-color: #27282C;
+        color: white;
+    }
+}
