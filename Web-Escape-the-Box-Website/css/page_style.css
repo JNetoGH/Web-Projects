@@ -1,0 +1,228 @@
+:root {
+    --myLightGray: #F4F4F4;
+    --mywhite: white;
+    --myblack: #27282C;
+
+    --conatainerLateralPadding: 10vw;
+    --conatainerVerticalPadding: 5vh;
+
+    --defaulth1: 3vw;
+    --defaulth2: 2vw;
+    --defaultTextSize: 1vw;
+    --defaultMarginFromHeader: 1vh;
+
+    --defaultLineHeight: 2.5vh;
+
+    --socialMediaIconsSize: 2vw
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--myblack);
+    color: var(--mywhite);
+}
+
+/****************           COMMON          ******************/
+/*************************************************************/
+
+h1 {
+    font-size: var(--defaulth1);
+}
+h2 {
+    font-size: var(--defaulth2);
+}
+il, p {
+    font-size:  var(--defaultTextSize);
+    color: #BFBFB7;
+    line-height: var(--defaultLineHeight);
+}
+
+
+/****************           HEADER          ******************/
+/*************************************************************/
+
+header {
+    padding: 0 var(--conatainerLateralPadding) 4vh;
+}
+header img {
+    width: 6%;
+}
+header img, header p {
+    display: inline;
+}
+
+/*****************       INTRODUCTION      *******************/
+/*************************************************************/
+
+.introduction_container {
+    padding: var(--conatainerVerticalPadding)  var(--conatainerLateralPadding);
+}
+
+.main_header h1, .main_header p {
+    display: inline;
+}
+
+#container-de-listas-de-objetivos {
+    margin-top:  2vh ;
+    display: flex;
+}
+
+/*distancia entre as listas*/
+.lista-de-objetos {
+    margin-left: 30px;
+}
+/*tira a margem da primeira lista*/
+#priemira-lista-de-objetos {
+    margin-left: 0;
+}
+.lista-de-objetos ul {
+    margin-top: var(--defaultMarginFromHeader);
+}
+
+/*****************          THE GAME       *******************/
+/*************************************************************/
+
+#legenda_especial{
+    color: black;
+    margin-bottom: var(--defaultMarginFromHeader);
+}
+.game_container {
+    background-color: var(--mywhite);
+    padding: var(--conatainerVerticalPadding); var(--conatainerLateralPadding);
+    text-align: center;
+}
+.unityframe {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 90%;
+    height: 650px;
+}
+
+/****************          GAME INFO        ******************/
+/*************************************************************/
+
+.game_info {
+    background-color: var(--myLightGray);
+    color: black;
+    padding: var(--conatainerVerticalPadding) var(--conatainerLateralPadding);
+}
+/*margem do separador*/
+.game_info hr {
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+/*distancia do título da molécula para o conteúdo*/
+.game_info_content_molecule h2 {
+    margin-bottom: var(--defaultMarginFromHeader);
+}
+
+
+/**************  GAME INFO (DESCRIPTIVE IMG) *****************/
+/*************************************************************/
+
+.descriptive_img {
+    background-color: lightskyblue;
+    display: flex;
+    border-radius: 15px;
+}
+.descriptive_img img{
+    width: 25vw;
+    display: inline;
+    border-radius: 15px 0 0 15px ;
+}
+.descriptive_img p {
+    color: black;
+    margin: auto 50px;
+}
+
+/****************      GAME INFO (CODE)     ******************/
+/*************************************************************/
+
+.code {
+    width: 100%;
+    height: 25vh;
+    /*distancia do código pro próximo h3*/
+    margin-bottom: var(--defaultMarginFromHeader);
+    border-radius: 15px;
+}
+
+/*************************************************************/
+/*************************************************************/
+
+footer {
+    padding: var(--conatainerVerticalPadding) var(--conatainerLateralPadding);
+}
+/*distancia da label pros icons*/
+#social_media_label {
+    margin-bottom: var(--defaultMarginFromHeader);
+}
+/*tira o sublinhado dos icons*/
+footer a {
+    text-decoration: none;
+}
+#dev_by {
+    float: right;
+    text-align: right;
+    vertical-align: center;
+}
+.social_media_icon_container {
+    display: inline-block;
+}
+.social_media_icon {
+    width: var(--socialMediaIconsSize);
+    margin-right: var(--defaultMarginFromHeader);
+}
+
+/*Portrait*/
+@media only screen and (orientation : portrait) {
+
+    :root {
+        --conatainerLateralPadding: 4vh;
+        --conatainerVerticalPadding: 5vw;
+
+        --defaulth1: 4vh;
+        --defaulth2: 2vh;
+        --defaultTextSize: 1.8vh;
+
+        --defaultLineHeight: 2vh;
+
+        --defaultMarginFromHeader: 1vw;
+        --socialMediaIconsSize: 3vh;
+    }
+
+    header img {
+        width: 25%;
+    }
+
+    .game_info hr {
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+
+    .descriptive_img {
+        border-radius: 15px;
+        display: block;
+    }
+    .descriptive_img img{
+        width: 100%;
+        display: block;
+        border-radius: 15px  15px 0 0 ;
+    }
+    .descriptive_img p {
+        display: block;
+        font-size: 2vh;
+        padding: 10% 0;
+    }
+
+    #dev_by {
+        font-size: 1.4vh;
+    }
+
+    .unityframe {
+        width: 90%;
+        height: 80vh;
+    }
+}

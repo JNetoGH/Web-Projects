@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Collider Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- FAVICON -->
+        <link rel="icon" type="image/x-icon" href="/images/profile2.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/reset_css.css">
+        <link rel="stylesheet" type="text/css" href="css/page_style.css">
+
+        <!-- MY FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <img src="images/profile2.png">
+            <p>page(v4.9)</p>
+        </header>
+
+        <!------------------------------------------------------------------------------------->
+
+        <section class="introduction_container">
+
+            <div class="main_header">
+                <h1>TESTE DE COLISÕES</h1>
+                <p>game(v2.4)</p>
+            </div>
+
+            <div id="container-de-listas-de-objetivos">
+                <div class="lista-de-objetos" id="priemira-lista-de-objetos">
+                    <h2>objetivos:</h2>
+                    <ul>
+                        <il>- tentar fugir da caixa</il>
+                        <br>
+                        <il>- obter o menor tempo possível</il>
+                    </ul>
+                </div>
+
+                <div class="lista-de-objetos">
+                    <h2>mecânicas:</h2>
+                    <ul>
+                        <il>- click do mouse ou toque gera uma esfera</il>
+                        <br>
+                        <il>- (W,A,S,D) ou Joystick para mover </il>
+                        <br>
+                        <il>- (Q,E) ou botões para rotacionar </il>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!------------------------------------------------------------------------------------->
+
+        <section class="game_container">
+            <p id="legenda_especial">ignore mensagens como<br>"WebGL não suportado"</p>
+            <iframe class="unityframe" src="build_and_resources_of_the_game/game.html"
+                    title="description" scrolling="no"></iframe>
+        </section>
+
+        <!------------------------------------------------------------------------------------->
+
+        <section class="game_info">
+
+            <div class="game_info_content_molecule">
+                <h2>MY COMMENTS</h2>
+                <div class="descriptive_img">
+                    <img src="images/gameplay.png">
+                    <p>
+                        é bem possível escapar, eu recomendo
+                        encher um canto de esferas, para que você possa subir nelas
+                        e tentar girar até conseguir subir na parede.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="game_info_content_molecule">
+                <h2>C# SCRIPT: PlayerController</h2>
+                <object class="code" data="codes/PlayerController.txt"></object>
+                <hr>
+                <h2>C# SCRIPT: BallCreator</h2>
+                <object class="code" data="codes/BallCreator.txt"></object>
+                <hr>
+                <h2>C# SCRIPT: UiManager</h2>
+                <object class="code" data="codes/UiManager.txt"></object>
+                <hr>
+                <h2>C# SCRIPT: MyTimer</h2>
+                <object class="code" data="codes/MyTimer.txt"></object>
+                <hr>
+                <h2>C# SCRIPT: VictoryController</h2>
+                <object class="code" data="codes/VictoryController.txt"></object>
+            </div>
+
+        </section>
+
+        <!------------------------------------------------------------------------------------->
+
+        <footer>
+
+            <div class="social_media_icon_container">
+                <p id="social_media_label">my social media: </p>
+                <a href="https://github.com/MendesGH" target="_blank">
+                    <img class="social_media_icon" src="images/social_media_icons/github-11-128.png">
+                </a>
+                <a href="https://www.instagram.com/lord_jmendes/" target="_blank">
+                    <img class="social_media_icon" src="images/social_media_icons/instagram-128.png">
+                </a>
+                <a href="https://twitter.com/Joaomendesalme1" target="_blank">
+                    <img class="social_media_icon" src="images/social_media_icons/twitter-128.png">
+                </a>
+                <a href="https://www.facebook.com/joaomendes.almeida.1/" target="_blank">
+                    <img class="social_media_icon" src="images/social_media_icons/facebook-3-128.png">
+                </a>
+            </div>
+
+            <p id = "dev_by">Developed by João Neto<br>joaomendes15@gmail.com</p>
+
+        </footer>
+
+    </body>
+
+</html>
